@@ -13,7 +13,7 @@ public class PropertyFile {
 	
 	static {
 		prop = new Properties();
-		url = com.sampleui.services.management.PropertyFile.class.getResource("sample.properties");
+		url = com.sampleui.services.management.PropertyFile.class.getResource("sampleui.properties");
 		try {
 			fs = new FileInputStream(url.getFile());
 			prop.load(fs);

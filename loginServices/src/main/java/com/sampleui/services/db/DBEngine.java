@@ -13,7 +13,7 @@ public class DBEngine {
 	Connection connection;
 	Statement statement;
 	ResultSet resultSet;
-	PropertyFile propertyFile = new PropertyFile();
+	PropertyFile propertyFile = PropertyFile.getInstance();
 	String connectionString = propertyFile.getProperty("connectionString");
 	String userId = propertyFile.getProperty("userId");
 	String password = propertyFile.getProperty("password");

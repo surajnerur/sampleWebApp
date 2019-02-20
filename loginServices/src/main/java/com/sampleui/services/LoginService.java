@@ -1,6 +1,5 @@
 package com.sampleui.services;
-
-import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
@@ -12,7 +11,7 @@ import com.sampleui.services.resources.LoginResource;
 
 @Path("/loginservice")
 public class LoginService {
-	@GET
+	@POST
 	@Path("/create")
 	public Response insertData(String userDataJSON) {
 		LoginResource loginResource = new LoginResource();
